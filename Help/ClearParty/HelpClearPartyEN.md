@@ -37,46 +37,46 @@ Currently, the like function does not improve the analysis. It's just there. <br
 ## Filtering and Specifying 
 This command allows you to filter and specify results. In addition to <TowerType>, you can also specify <Server>, <World>, <PartyDisplayCount>, <BattleReportFunction>, <AttackPower>, <Physical/MagicalDefensePenetration>, <PlayerName>, <PlayerID>, <LevelLink>, <SortOrder>, and <Character>. <br>
 ### Specifying a Server 
-<Server>, you can choose between "All Worlds" and "Japan Only". <br>
+parameter<Server>, you can choose between "All Worlds" and "Japan Only". <br>
 The default is "All Worlds". <br>
 This allows you to filter the worlds of the displayed clear parties. <br>
 
 ### Specifying a World 
-<World>, you can specify a world within the Japanese server.<br>
+parameter<World>, you can specify a world within the Japanese server.<br>
 For example, enter "w1" for World 1, "w80" for World 80. <br>
 
 ### Clear Party Display Count 
-<PartyDisplayCount>, you can change the number of clear parties displayed. <br>
+parameter<PartyDisplayCount>, you can change the number of clear parties displayed. <br>
 The more you display, the longer it will take. <br>
 The default is 50. <br>
 
 ### Adding the Battle Report Function 
-<BattleReportFunction>, you can choose whether to add a feature that allows you to tap on a player's name in a clear party to go to the battle report screen. <br>
+parameter<BattleReportFunction>, you can choose whether to add a feature that allows you to tap on a player's name in a clear party to go to the battle report screen. <br>
 The default is disabled. <br>
 For more details on the battle report function, please refer to the section "About the Battle Report Function". <br>
 
 ### Specifying Attack Power 
-<AttackPower>, you can specify a clear party where the character with the highest attack power has a value less than the specified value ("Actual Value" < "Specified Value"). <br>
+parameter<AttackPower>, you can specify a clear party where the character with the highest attack power has a value less than the specified value ("Actual Value" < "Specified Value"). <br>
 However, you must also specify a character. <br>
 
 ### Specifying Physical/Magical Defense Penetration 
-<Physical/MagicalDefensePenetration>, you can specify a clear party where the character with the highest physical/magical defense penetration has a value less than the specified value ("Actual Value" < "Specified Value"). <br>
+parameter<Physical/MagicalDefensePenetration>, you can specify a clear party where the character with the highest physical/magical defense penetration has a value less than the specified value ("Actual Value" < "Specified Value"). <br>
 However, you must also specify a character. <br>
 
 ### Specifying a Player Name 
-<PlayerName>, you can specify a clear party by the player's name at the time of clearing, using an exact match. <br>
+parameter<PlayerName>, you can specify a clear party by the player's name at the time of clearing, using an exact match. <br>
 
 ### Specifying a Player ID 
-<PlayerID>, you can specify a clear party by the player's ID at the time of clearing, using an exact match. <br>
+parameter<PlayerID>, you can specify a clear party by the player's ID at the time of clearing, using an exact match. <br>
 
 ### Specifying a Level Link 
-<LevelLink>, you can specify a clear party by the exact level link at the time of clearing. <br>
+parameter<LevelLink>, you can specify a clear party by the exact level link at the time of clearing. <br>
 
 ### Specifying a Sort Order 
-<SortOrder>, you can choose to sort by "Level", "Link", "Attack Power", or "Physical/Magical Defense Penetration". <br>
+parameter<SortOrder>, you can choose to sort by "Level", "Link", "Attack Power", or "Physical/Magical Defense Penetration". <br>
 
 ### Specifying a Character 
-<Character>, you can specify a single character. <br>
+parameter<Character>, you can specify a single character. <br>
 This character can be specified by Character ID, Character Name, Clifa Name, Title, or Lament Name. <br>
 The specified character will always be present in the clear parties displayed. <br><br>
 
