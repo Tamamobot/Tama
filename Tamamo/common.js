@@ -24,16 +24,16 @@ document.addEventListener("DOMContentLoaded", function() {
     if (header) {
         const pageTitle = header.querySelector('h1');
         const isEnglish = a.includes('en');
-        const part1Src = isEnglish ? "https://tamamo.dev/assets/header_parts1_en.webp" : "https://tamamo.dev/assets/header_parts1.webp";
-        const part2Src = isEnglish ? "https://tamamo.dev/assets/header_parts2_en.webp" : "https://tamamo.dev/assets/header_parts2.webp";
+        const part1Src = isEnglish ? "https://raw.githubusercontent.com/Tamamobot/Tama/refs/heads/main/Tamamo/header_parts1_en.webp" : "https://raw.githubusercontent.com/Tamamobot/Tama/refs/heads/main/Tamamo/header_parts1.webp";
+        const part2Src = isEnglish ? "https://raw.githubusercontent.com/Tamamobot/Tama/refs/heads/main/Tamamo/header_parts2_en.webp" : "https://raw.githubusercontent.com/Tamamobot/Tama/refs/heads/main/Tamamo/header_parts2.webp";
 
         header.innerHTML = `
             <div class="top-banner header-container">
                 <div class="header-layers">
                     <img src="${part1Src}" class="layer p1" alt="">
                     <img src="${part2Src}" class="layer p2" alt="">
-                    <img src="https://tamamo.dev/assets/header_parts3.webp" class="layer p3" alt="">
-                    <img src="https://tamamo.dev/assets/header_parts4.webp" class="layer p4" alt="" fetchpriority="high" loading="eager">
+                    <img src="https://raw.githubusercontent.com/Tamamobot/Tama/refs/heads/main/Tamamo/header_parts3.webp" class="layer p3" alt="">
+                    <img src="https://raw.githubusercontent.com/Tamamobot/Tama/refs/heads/main/Tamamo/header_parts4.webp" class="layer p4" alt="" fetchpriority="high" loading="eager">
                 </div>
             </div>
             ${pageTitle ? pageTitle.outerHTML : ''}

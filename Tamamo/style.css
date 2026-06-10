@@ -1,0 +1,199 @@
+html {
+    --link-base: blue;
+    --link-visited: #66f;
+    --color1: darkgreen;
+    --color2: red;
+    --color3: #202020;
+    --color4: brown;
+    --color5: darkred;
+    --color-gold: #fe6;
+    --color-silver: #eef;
+    --color-bronze: #eb5;
+    --color-text: #000;
+    --color-bg: #efefef;
+    --color-bg2: #b6b6b6;
+    --color-selected-bg: #fff;
+    --color-selected-text: #000;
+    font-size: 1rem;
+    color: var(--color-text);
+    font-family: 'FOT-sans-serif', sans-serif;
+    line-height: 1.05;
+    &.darkm {
+        --link-base: #f64;
+        --link-visited: orange;
+        --color1: lime;
+        --color2: skyblue;
+        --color3: #cfcfcf;
+        --color4: orange;
+        --color5: pink;
+        --color-gold: #60560b;
+        --color-silver: #445;
+        --color-bronze: #643;
+        --color-text: #eee;
+        --color-bg: #19191d;
+        --color-bg2: #3a3a3a;
+        --color-selected-bg: #000;
+        --color-selected-text: #fff;
+    }
+    /* text-shadow: 0 0 4px var(--color-bg), 0 0 2px var(--color-selected-text); */
+}
+#content-wrapper {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+#content-wrapper > *:not(#header) {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+body {
+    position: relative;
+    background-color: #d5c4c7;
+    margin: 0;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    z-index: -1;
+
+    background-image: url('assets/TamaBackground.webp');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: background-color 0.3s ease;
+    background-blend-mode: overlay;
+    
+    pointer-events: none;
+}
+.darkm body::before {
+    background-color: rgba(0, 0, 0, 0.3); 
+}
+#switch-dark, #switch-light {
+    display: none !important;
+}
+
+html:not(.darkm) #switch-dark {
+    display: inline-block !important;
+}
+
+html.darkm #switch-light {
+    display: inline-block !important;
+}
+.url:link{
+    color: var(--link-base);
+}
+.url:visited, .url:hover, .url:active {
+    color: var(--link-visited);
+}
+.header-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 8px;
+    display: block;
+}
+
+.header-controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1600px;
+    font-size: 18px;
+    padding: 2px 20px;
+    box-sizing: border-box;
+}
+.header-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 1200 / 337;
+    background-color: transparent;
+}
+
+.layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.header-layers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.p1 {
+    object-fit: contain;
+    max-width: 30%;
+    max-height: 48%;
+    object-position: left top; 
+    z-index: 4; 
+}
+.p2 { 
+    object-fit: contain;
+    object-position: center; 
+    z-index: 3; 
+}
+.p3 {
+    object-fit: cover;
+    object-position: right center; 
+    z-index: 2; 
+}
+.p4 { 
+    width: 100%;
+    object-fit: cover;
+    object-position: center; 
+    z-index: 1; 
+}
+
+
+@media screen and (max-width: 1024px) and (pointer: coarse) {
+    #mobile {
+        font-size: 1.7rem !important;/* font-size: 2.6em !important; */
+    }
+    #content-wrapper {
+        padding: 0px;
+    }
+    .header-container {
+        max-height: 150px !important;
+    }
+    .header-controls {
+        padding: 2px 20px;
+        font-size: 1.6rem !important;
+    }
+}
+
+/*PC*/
+@media screen and (pointer: fine) {
+    html {
+        font-size: 0.875rem !important;
+    }
+    #mobile {
+        font-size: 1.4rem !important;/* font-size: 2.1rem !important; */
+    }
+    
+    control-field.xsizeup {
+        flex-direction: column !important;
+    }
+    .header-img {
+        height: 150px;
+    }
+    .header-container {
+        min-width: 100%;
+        max-height: 150px !important;
+    }
+}
