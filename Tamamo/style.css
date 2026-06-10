@@ -63,7 +63,7 @@ body::before {
     height: 100vh;
     z-index: -1;
 
-    background-image: url('assets/TamaBackground.webp');
+    background-image: url('TamaBackground.webp');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
